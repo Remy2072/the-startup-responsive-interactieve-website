@@ -1,11 +1,11 @@
 @font-face {
-    font-family: 'Bold';
+    font-family: "Bold";
     font-style: normal;
     src: url(../fonts/PPFormula-SemiExtendedBold.otf);
 }
 
 @font-face {
-    font-family: 'Medium';
+    font-family: "Medium";
     font-style: normal;
     src: url(../fonts/PPFormula-SemiCondensedMedium.otf);
 }
@@ -14,7 +14,11 @@
     --color-white: #fff;
     --color-black: #000;
     --color-anthracite: #2d2d2d;
-    --primary-gradient: linear-gradient(113deg, rgba(254,115,1,1) 0%, rgba(255,23,32,1) 100%);
+    --primary-gradient: linear-gradient(
+        113deg,
+        rgba(254, 115, 1, 1) 0%,
+        rgba(255, 23, 32, 1) 100%
+    );
 }
 
 * {
@@ -35,9 +39,21 @@ header {
         width: 6.875rem;
     }
 
+    @media screen and (min-width: 50rem) {
+        & img {
+            width: 7.5rem;
+        }
+    }
+
+    @media screen and (min-width: 75rem) {
+        & img {
+            width: 9.375rem;
+        }
+    }
+
     & a {
         border: none;
-        font-family: 'Bold';
+        font-family: "Bold";
         padding: 0.5rem 1.5625rem 0.3125rem 1.5625rem;
         font-size: 1.125rem;
         color: var(--color-white);
@@ -47,8 +63,32 @@ header {
     }
 }
 
+@media screen and (min-width: 40.625rem) {
+    header {
+        padding: 0 2rem 0 2rem;
+    }
+}
+
+@media screen and (min-width: 75rem) {
+    header {
+        padding: 0 11.25rem 0 11.25rem;
+    }
+}
+
 main {
     padding: 0 1rem 0 1rem;
+}
+
+@media screen and (min-width: 40.625rem) {
+    main {
+        padding: 0 2rem 0 2rem;
+    }
+}
+
+@media screen and (min-width: 75rem) {
+    main {
+        padding: 0 11.25rem 0 11.25rem;
+    }
 }
 
 #home {
@@ -61,26 +101,82 @@ main {
     & h1 {
         text-align: center;
         font-size: 2rem;
-        font-family: 'Bold';
+        font-family: "Bold";
         margin-top: 6.25rem;
         background: var(--primary-gradient);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 
+    @media screen and (min-width: 40.625rem) {
+        & h1 {
+            font-size: 2.5rem;
+        }
+    }
+
+    @media screen and (min-width: 50rem) {
+        & h1 {
+            font-size: 3.125rem;
+        }
+    }
+
+    @media screen and (min-width: 70.688rem) {
+        & h1 {
+            font-size: 3.438rem;
+        }
+    }
+
+    @media screen and (min-width: 75rem) {
+        & h1 {
+            font-size: 4rem;
+            max-width: 53.125rem;
+        }
+    }
+
     & hr {
-        margin-top: 1.5625rem;
+        margin-top: 1.2625rem;
         height: 0.3125rem;
         width: 13.125rem;
         border: none;
         background: var(--primary-gradient);
     }
 
+    @media screen and (min-width: 40.625rem) {
+        & hr {
+            width: 19.125rem;
+        }
+    }
+
+    @media screen and (min-width: 75rem) {
+        & hr {
+            width: 25rem;
+        }
+    }
+
     & h2 {
         margin-top: 1.5625rem;
         text-align: center;
         font-size: 1.25rem;
-        font-family: 'Medium';
+        font-family: "Medium";
+    }
+
+    @media screen and (min-width: 40.625rem) {
+        & h2 {
+            font-size: 1.5rem;
+        }
+    }
+
+    @media screen and (min-width: 70.688rem) {
+        & h2 {
+            font-size: 1.75;
+            max-width: 53.125rem;
+        }
+    }
+
+    @media screen and (min-width: 75rem) {
+        & h2 {
+            font-size: 1.875rem;
+        }
     }
 
     & span {
@@ -93,8 +189,26 @@ main {
         text-decoration: none;
         margin-top: 4.6875rem;
         font-size: 1rem;
-        font-family: 'Bold';
+        font-family: "Bold";
         color: var(--color-anthracite);
+    }
+
+    @media screen and (min-width: 40.625rem) {
+        & a {
+            font-size: 1.2rem;
+        }
+    }
+
+    @media screen and (min-width: 40.625rem) {
+        & a {
+            font-size: 1.375rem;
+        }
+    }
+
+    @media screen and (min-width: 75rem) {
+        & a {
+            font-size: 1.5rem;
+        }
     }
 
     & img {
@@ -103,7 +217,7 @@ main {
     }
 
     &::before {
-        content: '';
+        content: "";
         top: 0;
         left: 0;
         right: 0;
@@ -115,5 +229,11 @@ main {
         background-size: 300vw;
         background-position: 52% 200%;
         opacity: 0.05;
+    }
+
+    @media screen and (min-width: 27.5rem) {
+        &::before {
+            display: none;
+        }
     }
 }
