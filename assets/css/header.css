@@ -1,0 +1,53 @@
+header {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem 0 1rem;
+
+    & img {
+        width: 6.875rem;
+    }
+
+    @media screen and (min-width: 50rem) {
+        & img {
+            width: 7.5rem;
+        }
+    }
+
+    @media screen and (min-width: 75rem) {
+        & img {
+            width: 9.375rem;
+        }
+    }
+
+    & a {
+        border: none;
+        font-family: "Bold";
+        padding: 0.5rem 1.5625rem 0.3125rem 1.5625rem;
+        font-size: 1.125rem;
+        color: var(--color-white);
+        text-decoration: none;
+        border-radius: 2px;
+        background: var(--primary-gradient);
+    }
+
+    @media screen and (min-width: 50rem) {
+        & a {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@media screen and (min-width: 40.625rem) {
+    header {
+        padding: 0 2rem 0 2rem;
+    }
+}
+
+@media screen and (min-width: 75rem) {
+    header {
+        padding: 0 11.25rem 0 11.25rem;
+    }
+}

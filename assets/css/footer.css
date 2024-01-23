@@ -1,0 +1,12 @@
+.fbg {
+    display: flex;
+    justify-content: center;
+    background: var(--red-gradient2);
+    padding: 1.25rem;
+    color: var(--color-white);
+    font-family: "Bold";
+}
+
+.fbg2 {
+    background: var(--blue-gradient2);
+}

@@ -1,0 +1,127 @@
+.bg {
+    margin-top: 2.188rem;
+    background: var(--red-gradient);
+    padding-bottom: 3.125rem;
+
+    & h3 {
+        padding-top: 5rem;
+        text-align: center;
+        font-size: 1.75rem;
+        font-family: "Bold";
+        color: var(--color-white);
+    }
+
+    @media screen and (min-width: 50rem) {
+        & h3 {
+            font-size: 2.188rem;
+        }
+    }
+
+    & ul {
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    & li {
+        margin-top: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    & img {
+        width: 6.25rem;
+        border-radius: 15px;
+    }
+
+    @media screen and (min-width: 50rem) {
+        & img {
+            width: 7.5rem;
+        }
+    }
+
+    & span {
+        font-size: 1.125rem;
+        font-family: "Bold";
+        margin-top: 5px;
+        color: var(--color-white);
+    }
+
+    @media screen and (min-width: 50rem) {
+        & span {
+            font-size: 1.25rem;
+        }
+    }
+
+    & div {
+        display: flex;
+        justify-content: center;
+        margin-top: 1.25rem;
+    }
+
+    & .checkbox {
+        width: 13.75rem;
+        height: 3.75rem;
+        background-color: var(--color-black);
+        border-radius: 1.875rem;
+        position: relative;
+        color: var(--color-white);
+        overflow: hidden;
+        margin-bottom: 3.125rem;
+    }
+
+    & #checkbox_toggle {
+        display: none;
+    }
+
+    & .checkbox .toggle {
+        width: 6.25rem;
+        height: 3.125rem;
+        position: absolute;
+        border-radius: 1.875rem;
+        left: 5px;
+        cursor: pointer;
+        background: var(--red-gradient);
+        transition: 0.4s;
+    }
+
+    & .checkbox .slide {
+        width: 14.375rem;
+        height: 3.75rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        cursor: pointer;
+    }
+
+    & .checkbox .slide .text {
+        font-size: 1rem;
+        font-family: "Bold";
+        z-index: 100;
+        cursor: pointer;
+    }
+
+    & .check:checked + .checkbox .slide .toggle {
+        transform: translateX(7.063rem);
+        background: var(--blue-gradient);
+    }
+}
+
+@media screen and (min-width: 40.625rem) {
+    .bg {
+        padding: 0 2rem 0 2rem;
+    }
+}
+
+@media screen and (min-width: 75rem) {
+    .bg {
+        padding: 0 11.25rem 0 11.25rem;
+    }
+}
+
+.bg2 {
+    background: var(--blue-gradient);
+}
