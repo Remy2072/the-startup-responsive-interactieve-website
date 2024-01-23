@@ -29,6 +29,16 @@
         rgba(5, 39, 71, 1) 0%,
         rgba(0, 174, 255, 1) 100%
     );
+    --red-gradient2: linear-gradient(
+        360deg,
+        rgba(62, 0, 0, 1) 0%,
+        rgba(255, 23, 32, 1) 100%
+    );
+    --blue-gradient2: linear-gradient(
+        360deg,
+        rgba(5, 39, 71, 1) 0%,
+        rgba(0, 174, 255, 1) 100%
+    );
 }
 
 * {
@@ -388,12 +398,12 @@ header {
 .fbg {
     display: flex;
     justify-content: center;
-    background: var(--red-gradient);
+    background: var(--red-gradient2);
     padding: 20px;
     color: var(--color-white);
     font-family: "Bold";
 }
 
 .fbg2 {
-    background: var(--blue-gradient);
+    background: var(--blue-gradient2);
 }
