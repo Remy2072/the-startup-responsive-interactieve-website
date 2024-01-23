@@ -22,33 +22,46 @@
                     highly engaging, innovative, and
                     <span>user-friendly</span> Jira and Confluence apps.
                 </h2>
-                <a href="#">Discover</a>
+                <a href="#apps">Discover</a>
                 <box-icon name="chevron-down" animation="fade-down" color="#2d2d2d"></box-icon>
                 <img class="miniLogo" src="assets/img/Caelor-Logo.svg" alt="Logo">
             </section>
-            <section id="apps">
+            <section id="apps" class="bg">
                 <h3>Our apps</h3>
                 <ul>
                     <li>
-                        <img src="./assets/img/rLinksy.svg" alt="Linksy-logo">
-                        <span>Linksy</span>
+                        <img id="img1" src="./assets/img/rLinksy.svg" alt="Linksy-logo">
+                        <span id="text1">Linksy</span>
                     </li>
                     <li>
-                        <img src="./assets/img/rTrophies.svg" alt="Trophies-logo">
-                        <span>Trophies</span>
+                        <img id="img2" src="./assets/img/rTrophies.svg" alt="Trophies-logo">
+                        <span id="text2">Trophies</span>
                     </li>
                     <li>
-                        <img src="./assets/img/rShoppie.svg" alt="Shoppie-logo">
-                        <span>Shoppie</span>
+                        <img id="img3" src="./assets/img/rShoppie.svg" alt="Shoppie-logo">
+                        <span id="text3">Shoppie</span>
                     </li>
                     <li>
-                        <img src="./assets/img/rFields.svg" alt="Fields-logo">
-                        <span>Fields</span>
+                        <img id="img4" src="./assets/img/rFields.svg" alt="Fields-logo">
+                        <span id="text4">Fields</span>
                     </li>
                 </ul>
-
+                <div>
+                    <input id="checkbox_toggle" type="checkbox" class="check">
+                    <div class="checkbox">
+                      <label class="slide" for="checkbox_toggle">
+                        <label class="toggle" for="checkbox_toggle"></label>
+                        <label class="text" for="checkbox_toggle">Red</label>
+                        <label class="text" for="checkbox_toggle">Blue</label>
+                      </label>
+                    </div>
+                </div>
             </section>
+            <footer class="fbg">
+                <h4>Copyright © 2024 Caelor</h4>
+            </footer>
         </main>
+        <script src="/assets/js/main.js"></script>
         <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     </body>
 </html>
