@@ -139,9 +139,17 @@
         opacity: 0.05;
     }
 
-    @media screen and (min-width: 27.5rem) {
+    @media screen and (min-width: 40rem) {
         &::before {
-            display: none;
+            background-size: 60rem;
+            background-position: -15rem 100%;
+        }
+    }
+
+    @media screen and (min-width: 75rem) {
+        &::before {
+            background-size: 75rem;
+            background-position: -20rem 100%;
         }
     }
 }

@@ -1,75 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Caelor</title>
-        <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="stylesheet" href="assets/css/header.css">
-        <link rel="stylesheet" href="assets/css/home.css">
-        <link rel="stylesheet" href="assets/css/apps.css">
-        <link rel="stylesheet" href="assets/css/footer.css">
-        <link rel="icon" type="image/x-icon" href="./assets/img/fav.ico">
-    </head>
-    <body>
-        <header>
-            <img src="assets/img/Caelor-Wordmark.svg" alt="Woodmark">
-            <nav>
-                <a href="#">Demo</a>
-            </nav>
-        </header>
-        <main>
-            <section id="home">
-                <h1>Unleash the power of your Atlassian cloud</h1>
-                <hr>
-                <h2>Caelor is a Gold Atlassian Marketplace Partner developing
-                    highly engaging, innovative, and
-                    <span>user-friendly</span> Jira and Confluence apps.
-                </h2>
-                <a href="#apps">Discover</a>
-                <box-icon name="chevron-down" animation="fade-down" color="#2d2d2d"></box-icon>
-                <img class="miniLogo" src="assets/img/Caelor-Logo.svg" alt="Logo">
-            </section>
-            <section id="apps" class="bg">
-                <h3>Our apps</h3>
-                <ul>
-                    <li>
-                        <img id="img1" src="./assets/img/rLinksy.svg" alt="Linksy-logo">
-                        <span id="text1">Linksy</span>
-                    </li>
-                    <li>
-                        <img id="img2" src="./assets/img/rTrophies.svg" alt="Trophies-logo">
-                        <span id="text2">Trophies</span>
-                    </li>
-                    <li>
-                        <img id="img3" src="./assets/img/rShoppie.svg" alt="Shoppie-logo">
-                        <span id="text3">Shoppie</span>
-                    </li>
-                    <li>
-                        <img id="img4" src="./assets/img/rFields.svg" alt="Fields-logo">
-                        <span id="text4">Fields</span>
-                    </li>
-                    <li>
-                        <img id="img4" src="./assets/img/lLingo.svg" alt="Linksy-logo">
-                        <span id="text4">Linksy</span>
-                    </li>
-                </ul>
-                <div>
-                    <input id="checkbox_toggle" type="checkbox" class="check">
-                    <div class="checkbox">
-                      <div class="slide" for="checkbox_toggle">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caelor</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/apps.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="icon" type="image/x-icon" href="./assets/img/fav.ico">
+</head>
+<body>
+    <header>
+        <img src="assets/img/Caelor-Wordmark.svg" alt="Woodmark">
+        <nav>
+            <a href="#">Demo</a>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h1>Unleash the power of your Atlassian cloud</h1>
+            <hr>
+            <h2>Caelor is a Gold Atlassian Marketplace Partner developing
+                highly engaging, innovative, and
+                <span>user-friendly</span> Jira and Confluence apps.
+            </h2>
+            <a href="#apps">Discover</a>
+            <box-icon name="chevron-down" animation="fade-down" color="#2d2d2d"></box-icon>
+            <img class="miniLogo" src="assets/img/Caelor-Logo.svg" alt="Logo">
+        </section>
+        <section id="apps" class="bg">
+            <h3>Our apps</h3>
+            <ul>
+                <a href="#/" onclick="toggleBlur()">
+                    <img id="img1" src="./assets/img/rLinksy.svg" alt="Linksy-logo">
+                    <span id="text1">Linksy</span>
+                </a>
+                <a href="#/" onclick="toggleBlur()" >
+                    <img id="img2" src="./assets/img/rTrophies.svg" alt="Trophies-logo">
+                    <span id="text2">Trophies</span>
+                </a>
+                <a href="#/" onclick="toggleBlur()" >
+                    <img id="img3" src="./assets/img/rShoppie.svg" alt="Shoppie-logo">
+                    <span id="text3">Shoppie</span>
+                </a>
+                <a href="#/" onclick="toggleBlur()" >
+                    <img id="img4" src="./assets/img/rFields.svg" alt="Fields-logo">
+                    <span id="text4">Fields</span>
+                </a>
+                <a href="#/" onclick="toggleBlur()" >
+                    <img id="img4" src="./assets/img/lLingo.svg" alt="Linksy-logo">
+                    <span id="text4">Linksy</span>
+                </a>
+                <div id="popup">
+                    <h2>Linksy</h2>
+                    <p>
+                        Easily filter out and link issues using single or 
+                        multiple issue picker custom fields based on JQL. 
+                        Use the resync feature to fill custom fields with native Jira links.
+                    </p>
+                    <a href="#/" onclick="toggleBlur()">Close</a>
+                </div>
+            </ul>
+            <div>
+                <input id="checkbox_toggle" type="checkbox" class="check">
+                <div class="checkbox">
+                    <div class="slide" for="checkbox_toggle">
                         <label class="toggle" for="checkbox_toggle"></label>
                         <label class="text" for="checkbox_toggle">Red</label>
                         <label class="text" for="checkbox_toggle">Blue</label>
-                      </div>
                     </div>
                 </div>
-            </section>
-            <footer class="fbg">
-                <h4>Copyright © 2024 Caelor</h4>
-            </footer>
-        </main>
-        <script src="assets/js/main.js"></script>
-        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    </body>
+            </div>
+        </section>
+        <footer class="fbg">
+            <h4>Copyright © 2024 Caelor</h4>
+        </footer>
+    </main>
+    <script src="assets/js/main.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
 </html>
