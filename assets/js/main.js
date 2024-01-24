@@ -1,7 +1,7 @@
 const toggle = document.getElementById("checkbox_toggle");
 const bg = document.querySelector(".bg");
 const fbg = document.querySelector(".fbg");
-const extraIcon = document.querySelector("a:nth-of-type(5)");
+const extraIcon = document.querySelector("li:nth-of-type(5)");
 
 function changeLogo() {
     const images = [

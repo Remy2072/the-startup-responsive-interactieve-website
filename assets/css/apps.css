@@ -35,7 +35,7 @@
         cursor: pointer;
     }
 
-    & a:nth-of-type(5) {
+    & li:nth-of-type(5) {
         display: none;
     }
 
