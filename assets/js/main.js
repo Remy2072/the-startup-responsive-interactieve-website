@@ -1,6 +1,7 @@
 const toggle = document.getElementById("checkbox_toggle");
 const bg = document.querySelector(".bg");
 const fbg = document.querySelector(".fbg");
+const extraIcon = document.querySelector("li:nth-of-type(5)");
 
 function changeLogo() {
     const images = [
@@ -18,6 +19,7 @@ function changeLogo() {
 
     bg.classList.add("bg2");
     fbg.classList.add("fbg2");
+    extraIcon.style.display = "flex";
 }
 
 function resetLogo() {
@@ -36,6 +38,7 @@ function resetLogo() {
 
     bg.classList.remove("bg2");
     fbg.classList.remove("fbg2");
+    extraIcon.style.display = "none";
 }
 
 toggle.addEventListener("click", function () {
